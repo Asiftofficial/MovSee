@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">MovSee</string>
+    <string name="tab1">Movies</string>
+    <string name="tab2">Tv Shows</string>
+    <string name="play">Play Trailer</string>
+    <string name="name">Name</string>
+    <string name="overview">Overview</string>
+    <string name="genre">Genre</string>
+    <string name="scores">Scores</string>
+    <string name="sc_values">90</string>
+    <string name="minutes">Minutes</string>
+    <string name="poster">Poster</string>
+    <string name="title_movies">Movies</string>
+    <string name="title_tv">Tv</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="error_result">Terjadi kesalahan</string>
+    <string name="empty_data">No Data</string>
+    <string name="logo">logo</string>
+    <string name="title_search">Search</string>
+    <string name="search_hint_movie">Search Movie</string>
+    <string name="check_internet">Please check your internet</string>
+    <string name="no_video">No Video</string>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.astech.movsee">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_movsee"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_movsee_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.ads.WebAdsActivity"
+            android:theme="@style/AppTheme.Fullscreen"/>
+        <activity android:name=".ui.ads.InmobiBannerActivity" />
+        <activity
+            android:name=".ui.ads.FullAdsActivity"
+            android:theme="@style/AppTheme.Fullscreen" />
+        <activity
+            android:name=".ui.ads.PopupActivity"
+            android:theme="@style/PopTheme" />
+        <activity android:name=".ui.tv.genre.TvGenreActivity" />
+        <activity android:name=".ui.movies.genre.MovieGenreActivity" />
+        <activity
+            android:name=".ui.LandingActivity"
+            android:theme="@style/AppTheme.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.detail.video.VideoActivity"
+            android:theme="@style/AppTheme.PopVideo" />
+        <activity android:name=".ui.detail.DetailActivity" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:theme="@style/AppTheme.FullscreenMain" />
+    </application>
+
+</manifest>

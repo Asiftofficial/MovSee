@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".ui.ads.FullAdsActivity">
+
+    <ImageView
+        android:id="@+id/btn_fullAds"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/ic_back"
+        android:adjustViewBounds="true"/>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_ads"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/btn_fullAds"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/view_pager_ads"
+        android:layout_above="@+id/fullAds_footer">
+
+        <LinearLayout
+            android:id="@+id/web_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/news_full_1"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="95dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/newsimage1"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="03 Feb 2021 16:29"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Efek Merenung saat Kasus Infeksi Virus Corona Semakin Banyak"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold"
+                            android:layout_marginTop="2dp"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Kasus infeksi virus corona di Indonesia tembus satu juta, Menkes ajak warga merenung. Adakah manfaat merenung untuk kesehatan mental?"
+                            android:maxLines="2"
+                            android:ellipsize="end"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/news_full_2"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/newsimage2"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="03 Feb 2021 15:59"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Manfaat Tidur Siang bagi Anak, Apa Saja?"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="2dp"
+                            android:textStyle="bold"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Tidur siang memiliki banyak manfaat bagi kesehatan anak, mulai dari untuk mengembalikan energi hingga meningkatkan mood."
+                            android:maxLines="2"
+                            android:ellipsize="end"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/news_full_3"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/newsimage3"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="03 Feb 2021 15:30"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Minyak Kelapa Lancarkan Persalinan, Mitos atau Fakta?"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="2dp"
+                            android:textStyle="bold"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Mengonsumsi minyak kelapa secara rutin selama hamil dipercaya dapat melancarkan persalinan. Benarkah ini?"
+                            android:maxLines="2"
+                            android:ellipsize="end"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/news_full_4"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="16dp"
+                android:layout_height="95dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/newsimage4"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="03 Feb 2021 18:45"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fakta Seputar Bau Mulut yang Perlu Anda Tahu"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="2dp"
+                            android:textStyle="bold"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Bau mulut adalah keluhan yang dapat dialami siapa saja. Yuk, cari tahu fakta mengenai kondisi ini, agar Anda tidak terjebak mitos menyesatkan.
+"
+                            android:maxLines="2"
+                            android:ellipsize="end"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/news_full_5"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/newsimage5"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="03 Feb 2021 18:00"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Manfaat Penggunaan Krim Mata yang Perlu Anda Tahu"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="2dp"
+                            android:textStyle="bold"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Krim mata banyak digunakan untuk menjaga kesehatan kulit di sekitar mata. Sebenarnya, apa saja manfaat krim mata? Simak penjelasannya di sini.
+"
+                            android:maxLines="2"
+                            android:ellipsize="end"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/news_full_6"
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/newsimage6"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="03 Feb 2021 17:45"
+                            android:textSize="10sp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Konsumsi Vitamin E Bisa Mencerahkan Kulit, Benarkah?"
+                            android:textColor="@android:color/black"
+                            android:layout_marginTop="2dp"
+                            android:textStyle="bold"
+                            android:maxLines="1"
+                            android:ellipsize="end"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            android:text="Konsumsi vitamin E dipercaya bermanfaat untuk mencerahkan kulit. Apakah benar? Mari simak manfaat vitamin E untuk mencerahkan kulit di sini.
+"
+                            android:maxLines="2"
+                            android:ellipsize="end"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/fullAds_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/footer1" />
+
+</RelativeLayout>

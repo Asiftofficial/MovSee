@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardMaxElevation="4dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_poster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/poster"
+                android:src="@color/background"/>
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:contentDescription="@string/scores"
+                android:background="@color/colorScore"
+                android:src="@drawable/score"/>
+
+            <TextView
+                android:id="@+id/score_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/sc_values"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="2dp"
+                android:textSize="12sp"/>
+
+        </FrameLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
